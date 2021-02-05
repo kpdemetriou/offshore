@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "offshore"
+version = "0.2.0"
+description = "Simple, ergonomic data persistence for Python."
+authors = ["Phil Demetriou <inbox@philonas.net>"]
+license = "BSD-3-Clause"
+packages = [{ include = "offshore" }]
+include = ["LICENSE"]
+repository = "https://github.com/kpdemetriou/offshore"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Telecommunications Industry",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Database",
+    "Topic :: Software Development :: Object Brokering",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+portalocker = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
